@@ -1,0 +1,57 @@
+{
+  "name": "sage",
+  "private": true,
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "bud clean && bud dev",
+    "build": "bud clean && bud build",
+    "buildwatch": "bud clean && bud build",
+    "doctor": "bud doctor",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss}\" --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint resources/scripts",
+    "lint:css": "stylelint \"resources/**/*.{scss,vue}\"",
+    "test": "npm run lint",
+    "translate": "npm run translate:pot && npm run translate:js",
+    "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --ignore-domain --include=\"app,resources\"",
+    "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
+    "prepare": "cd ../../../ && husky install ./wp-content/themes/sage10/.husky"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.2",
+    "@roots/bud": "5.8.7",
+    "@roots/bud-entrypoints": "^5.8.7",
+    "@roots/bud-eslint": "5.8.7",
+    "@roots/bud-prettier": "5.8.7",
+    "@roots/bud-purgecss": "^5.8.7",
+    "@roots/bud-sass": "^5.8.7",
+    "@roots/bud-stylelint": "5.8.7",
+    "@roots/eslint-config": "5.8.7",
+    "@roots/sage": "5.8.7",
+    "autoprefixer": "10.4.6",
+    "copy-webpack-plugin": "^11.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "purgecss-webpack-plugin": "^4.1.3",
+    "stylelint": "^13.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-no-unsupported-browser-features": "^5.0.3",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-processor-styled-components": "^1.9.0",
+    "stylelint-scss": "^4.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "purgecss-with-wordpress": "^4.1.0"
+  }
+}

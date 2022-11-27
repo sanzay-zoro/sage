@@ -1,0 +1,223 @@
+h1,
+.h1,
+h2,
+h3,
+h4,
+h5,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h6,
+.sh1,
+.text-link,
+.eyebrow {
+  @extend %heading-2;
+}
+
+h1,
+.h1,
+h2,
+h3,
+h4,
+h5,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h6 {
+  margin-bottom: 0;
+}
+
+h1,
+.h1 {
+  font-size: 3.733rem;
+  line-height: 4.48rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 5.333rem;
+    line-height: 6.4rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3.333rem;
+  line-height: 4rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 4.6rem;
+    line-height: 5.6rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 2.8rem;
+  line-height: 3.36rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 2.33rem;
+  line-height: 2.8rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 3.333rem;
+    line-height: 4rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.866rem;
+  line-height: 2.24rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 2.666rem;
+    line-height: 3.2rem;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 1.4rem;
+  line-height: 1.68rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.sh1 {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.q {
+  &-1 {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+body,
+.body {
+  @extend %base;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+}
+
+.text-link {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+  }
+}
+
+.eyebrow {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.caption {
+  font-size: 1rem;
+  line-height: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+.small {
+  font-size: 1rem;
+  line-height: 2rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+
+  &-xs {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+}

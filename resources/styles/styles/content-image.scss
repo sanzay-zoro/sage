@@ -1,0 +1,10 @@
+@import '../custom';
+
+.content-image {
+  &__image {
+    @include media-breakpoint-up(xl) {
+      max-width: 48.4rem;
+      margin: 0 auto;
+    }
+  }
+}

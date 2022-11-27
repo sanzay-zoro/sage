@@ -1,0 +1,15 @@
+// Icons Pseudo
+// eg: @include icons-pseudo; [within the pseudo class]
+
+/*
+&:before {
+    content: '\e900';
+    @include icons-pseudo;
+}
+*/
+
+/* stylelint-disable */
+
+@mixin icons-pseudo {
+  font-family: $icomoon-font-family;
+}
